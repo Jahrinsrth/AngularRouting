@@ -5,3 +5,11 @@
 
 <button (click)="OnNext()"> Next</button>
 
+
+<button [routerLink]="['/employee' , employeeId, 'overview']" > OverView  </button>
+
+<button (click)="contactToNavigate()" > Contact  </button>
+
+<router-outlet></router-outlet>
+
+

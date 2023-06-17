@@ -33,4 +33,8 @@ export class EmployeeDetailsComponent implements  OnInit{
           this.router.navigate(['/employee', id]); 
   }
 
+  contactToNavigate(){
+      this.router.navigate(['contact'], {relativeTo : this.route});
+  }
+
 }

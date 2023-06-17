@@ -8,6 +8,10 @@ import { DepartmentComponent } from './department/department.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { OverViewComponent } from './employee-details/over-view/over-view.component';
+import { ContactsComponent } from './employee-details/contacts/contacts.component';
+import { UserModule } from './user/user.module';
+import { IndexComponent } from './employee-details/index/index.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +20,14 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     DepartmentComponent,
     EmployeeComponent,
     EmployeeDetailsComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    OverViewComponent,
+    ContactsComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
+    UserModule,
     AppRoutingModule
   ],
   providers: [],
